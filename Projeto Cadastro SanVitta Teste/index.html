@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADASTRO</title>
+    <link rel="icon" href="logo clinica.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <img src="logo clinica.png" alt="Logo da Clínica" class="logo">
+        <h2>CADASTRO</h2>
+        
+        <!-- FORMULÁRIO INTEGRADO COM SHEETMONKEY -->
+        <form action="https://api.sheetmonkey.io/form/8244ouRvJqMCfmNo4fnAFf" method="post">
+            <div class="form-row">
+                <div class="form-column">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="Nome">
+        
+                    <label for="nascimento">Data de Nascimento:</label>
+                    <input type="date" id="nascimento" name="Nascimento">
+        
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="Endereço">
+        
+                    <label for="profissao">Profissão:</label>
+                    <input type="text" id="profissao" name="Profissão">
+        
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="Email">
+                </div>
+                <div class="form-column">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="CPF">
+        
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="Telefone">
+        
+                    <label for="estado_civil">Filhos/Estado Civil:</label>
+                    <select id="estado_civil" name="Estado Civil">
+                        <option value="">Selecione...</option>
+                        <option value="solteiro">Solteiro(a)</option>
+                        <option value="casado">Casado(a)</option>
+                        <option value="divorciado">Divorciado(a)</option>
+                        <option value="viuvo">Viúvo(a)</option>
+                    </select>
+        
+                    <label for="como_soube">Como soube da clínica?</label>
+                    <select id="como_soube" name="Como soube?">
+                        <option value="">Selecione...</option>
+                        <option value="internet">Internet</option>
+                        <option value="indicacao">Indicação</option>
+                        <option value="outdoor">Outdoor</option>
+                        <option value="outro">Outro</option>
+                    </select>
+        
+                    <label for="motivo">Motivo da consulta:</label>
+                    <textarea id="motivo" name="Motivo da Consulta" rows="4"></textarea>
+                </div>
+            </div>
+            <br><br><br>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>  
+    <script src="script.js"></script>
+</body>
+</html>
